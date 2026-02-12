@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <title>Recursos GD - KNOTASU GD</title>
+    <style>
+        /* Reutilizamos tu fondo de guerra y estilo retro */
+        body {
+            background-color: #4b5320; 
+            background-image: 
+                radial-gradient(circle at 20% 30%, #353a1a 15%, transparent 20%),
+                radial-gradient(circle at 70% 10%, #2b2f11 10%, transparent 15%),
+                radial-gradient(circle, transparent 0%, rgba(0,0,0,0.6) 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(to bottom, #7b3f00 20%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px white;
+            filter: drop-shadow(4px 4px 0px #000);
+            text-transform: uppercase;
+            font-family: 'Hanalei Fill', system-ui;
+        }
+
+        .grid-recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+            margin-top: 40px;
+        }
+
+        .item-recurso {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #f6ff00;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .item-recurso:hover {
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .btn-volver {
+            margin-top: 50px;
+            padding: 10px 20px;
+            background-color: #f6ff00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recursos de GD</h1>
+    
+    <div class="grid-recursos">
+        <div class="item-recurso">
+            <h3>Texturas Pack</h3>
+            <p>Descarga mi pack de texturas personalizadas hechas en GIMP.</p>
+            <a href="#" style="color: #f6ff00;">Descargar</a>
+        </div>
+        <div class="item-recurso">
+            <h3>Iconos Especiales</h3>
+            <p>Modelos de iconos que uso en mis videos de YouTube.</p>
+            <a href="#" style="color: #f6ff00;">Ver Galería</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="btn-volver">← Volver al Menú</a>
+</body>
+</html>
