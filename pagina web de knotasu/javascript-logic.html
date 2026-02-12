@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <title>Librerías - KNOTASU GD</title>
+    <style>
+        body {
+            background-color: #4b5320; 
+            background-image: radial-gradient(circle at 20% 30%, #353a1a 15%, transparent 20%), 
+                              radial-gradient(circle, transparent 0%, rgba(0,0,0,0.8) 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(to bottom, #7b3f00 20%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1.5px white;
+            filter: drop-shadow(4px 4px 0px #000);
+            text-transform: uppercase;
+            margin-top: 20px;
+            font-family: 'Hanalei Fill', system-ui;
+        }
+
+        /* EL MOTOR DE LAS 3 TARJETAS */
+        .contenedor-librerias {
+            display: grid;
+            /* Aquí obligamos a que las tarjetas midan entre 280px y 1fr */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px;
+            width: 90%;
+            max-width: 1100px; /* Esto evita que se estiren como chicle */
+            margin: 40px auto;
+        }
+
+        .card-libreria {
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #f6ff00;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .miniatura {
+            width: 100%;
+            height: 150px;
+            background: #222;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px dashed #f6ff00;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .miniatura img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .preview-codigo {
+            background: #111;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: #0f0;
+            height: 60px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .btn-ver-todo {
+            padding: 10px;
+            background: #f6ff00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-volver {
+            margin-top: 30px;
+            color: #f6ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lógicas JavaScript</h1>
+
+    <div class="contenedor-librerias">
+        <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Cubo de GD</h3>
+            <p>MODELO PARA GEOMETRY DASH</p>
+            <div class="preview-codigo">.gd-cube { width: 100px; animation: rotate; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+
+        <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Animación Neón</h3>
+            <p>BRILLO PARA BOTONES</p>
+            <div class="preview-codigo">.btn-neon { box-shadow: 0 0 10px #f6ff00; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+
+          <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Animación Neón</h3>
+            <p>BRILLO PARA BOTONES</p>
+            <div class="preview-codigo">.btn-neon { box-shadow: 0 0 10px #f6ff00; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+
+          <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Animación Neón</h3>
+            <p>BRILLO PARA BOTONES</p>
+            <div class="preview-codigo">.btn-neon { box-shadow: 0 0 10px #f6ff00; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+
+          <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Animación Neón</h3>
+            <p>BRILLO PARA BOTONES</p>
+            <div class="preview-codigo">.btn-neon { box-shadow: 0 0 10px #f6ff00; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+
+          <div class="card-libreria">
+            <div class="miniatura"><img src="cubo.png" alt="Cubo GD"></div>
+            <h3>Animación Neón</h3>
+            <p>BRILLO PARA BOTONES</p>
+            <div class="preview-codigo">.btn-neon { box-shadow: 0 0 10px #f6ff00; }</div>
+            <a href="#" class="btn-ver-todo">Ver Todo</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="btn-volver">← Regresar al Menú</a>
+
+</body>
+</html>
